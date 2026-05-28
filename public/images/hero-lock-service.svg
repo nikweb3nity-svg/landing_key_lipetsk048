@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+  <title id="title">Мастер по вскрытию замков</title>
+  <desc id="desc">Светлая иллюстрация мастера, замка и инструмента аварийной службы</desc>
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="blueHero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="greenHero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="620" rx="34" fill="url(#heroBg)"/>
+  <g opacity=".45" stroke="#BFDBFE" stroke-width="2">
+    <path d="M80 120h220M80 172h140M80 224h190M560 96h96M520 146h138M540 452h94M110 508h210"/>
+    <path d="M60 80h640v460H60z" fill="none" rx="28"/>
+  </g>
+  <g transform="translate(85 95)">
+    <rect x="0" y="196" width="280" height="260" rx="28" fill="#fff" stroke="#E2E8F0" stroke-width="4"/>
+    <rect x="34" y="230" width="88" height="156" rx="18" fill="#DBEAFE"/>
+    <path d="M145 236h88M145 280h58M145 324h92M145 368h72" stroke="#94A3B8" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="78" cy="308" r="18" fill="url(#blueHero)"/>
+    <path d="M77 308v54" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M34 454h226" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(390 92)">
+    <path d="M108 104c0 53-35 96-78 96s-78-43-78-96 35-92 78-92 78 39 78 92Z" fill="#CBD5E1"/>
+    <path d="M14 94c18-58 82-70 117-22 25 34 19 83-6 116-31 41-92 32-113-16-9-20-8-52 2-78Z" fill="#1E293B"/>
+    <circle cx="72" cy="122" r="58" fill="#F7C59F"/>
+    <path d="M18 109c44 4 77-8 97-38 22 17 32 42 30 75 22-62-18-116-74-116-46 0-76 31-82 79Z" fill="#0F172A"/>
+    <path d="M50 138c18 12 37 12 55 0" stroke="#9A5B3D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M21 214h151c36 0 65 29 65 65v152H-44V279c0-36 29-65 65-65Z" fill="url(#blueHero)"/>
+    <path d="M5 250h188" stroke="#93C5FD" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-8 432h220" stroke="#1E40AF" stroke-width="12" stroke-linecap="round"/>
+    <rect x="-22" y="292" width="72" height="138" rx="28" fill="#F7C59F"/>
+    <rect x="156" y="292" width="72" height="138" rx="28" fill="#F7C59F"/>
+    <path d="M-20 374h248" stroke="#0F172A" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-2 374h62M148 374h62" stroke="#F59E0B" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(182 108)">
+    <path d="M100 310a54 54 0 1 1 40-91l120-120 40 40-26 26-20-20-24 24 20 20-42 42-22-22-58 58a54 54 0 0 1-28 43Z" fill="url(#greenHero)" stroke="#047857" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="100" cy="310" r="15" fill="#fff"/>
+  </g>
+  <g transform="translate(506 384)">
+    <rect width="142" height="92" rx="24" fill="#fff" stroke="#E2E8F0" stroke-width="4"/>
+    <path d="M34 50h74" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+    <path d="M50 34 30 54l20 20M92 34l20 20-20 20" stroke="#10B981" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
