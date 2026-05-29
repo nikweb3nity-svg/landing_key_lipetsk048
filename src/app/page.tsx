@@ -29,23 +29,35 @@ export default function HomePage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {helpCases.map((item, index) => (
               <article
-                className="group rounded-[24px] border border-line bg-white p-5 transition hover:border-blue-200 hover:shadow-service"
+                className="group overflow-hidden rounded-[24px] border border-line bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-service"
                 key={item.title}
               >
-                <div className="flex items-start justify-between gap-4">
-                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-service-blueSoft text-service-blueText">
+                <div className="relative aspect-[16/10] overflow-hidden bg-service-alt">
+                  <img
+                    alt={item.title}
+                    className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105"
+                    loading="lazy"
+                    src={item.image}
+                  />
+                  <div className="absolute inset-0 bg-graphite/0 transition duration-300 group-hover:bg-graphite/25" />
+                  <div className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-xl bg-white/92 text-service-blueText shadow-sm backdrop-blur">
                     <Icon className="h-5 w-5" name={caseIcons[index]} />
-                  </span>
-                  <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-bold text-graphite">
+                  </div>
+                  <span className="absolute bottom-4 right-4 rounded-full bg-white/92 px-3 py-1 text-sm font-extrabold text-graphite shadow-sm backdrop-blur">
                     {item.price}
                   </span>
                 </div>
-                <h3 className="mt-5 text-xl font-bold text-graphite">{item.title}</h3>
-                <p className="mt-2 leading-7 text-muted">{item.text}</p>
-                <a className="mt-4 inline-flex items-center gap-2 font-bold text-service-blue" href="#cost">
-                  Узнать точнее
-                  <Icon className="h-4 w-4" name="arrow" />
-                </a>
+                <div className="p-5">
+                  <h3 className="text-xl font-bold text-graphite">{item.title}</h3>
+                  <p className="mt-2 leading-7 text-muted">{item.text}</p>
+                  <a
+                    className="mt-4 inline-flex items-center gap-2 font-bold text-service-blue transition group-hover:translate-x-1 group-hover:text-service-blueHover"
+                    href="#cost"
+                  >
+                    Узнать точнее
+                    <Icon className="h-4 w-4" name="arrow" />
+                  </a>
+                </div>
               </article>
             ))}
           </div>

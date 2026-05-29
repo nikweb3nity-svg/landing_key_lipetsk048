@@ -37,32 +37,38 @@ export const helpCases = [
   {
     title: "Захлопнулась дверь",
     text: "Ключи остались внутри, дверь закрылась случайно.",
-    price: "от 900 ₽"
+    price: "от 900 ₽",
+    image: "/images/services/door-slammed.png"
   },
   {
     title: "Потеряли ключи",
     text: "Откроем дверь и при необходимости заменим личинку.",
-    price: "от 900 ₽"
+    price: "от 900 ₽",
+    image: "/images/services/lost-keys.png"
   },
   {
     title: "Заклинил замок",
     text: "Механизм не проворачивается или дверь не открывается.",
-    price: "от 900 ₽"
+    price: "от 900 ₽",
+    image: "/images/services/jammed-lock.png"
   },
   {
     title: "Сломался ключ",
     text: "Извлечем обломок и проверим работу замка.",
-    price: "от 800 ₽"
+    price: "от 800 ₽",
+    image: "/images/services/broken-key.png"
   },
   {
     title: "Закрыт автомобиль",
     text: "Откроем авто без разбития стекла и грубой силы.",
-    price: "от 1200 ₽"
+    price: "от 1200 ₽",
+    image: "/images/services/closed-car.png"
   },
   {
     title: "Нужна замена",
     text: "Поменяем личинку или замок после вскрытия.",
-    price: "от 800 ₽"
+    price: "от 800 ₽",
+    image: "/images/services/lock-replacement.png"
   }
 ];
 
