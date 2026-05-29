@@ -127,57 +127,63 @@ export const districts = [
 export const testimonials = [
   {
     text: "Захлопнулась дверь, пока выходила к курьеру. По телефону сразу сказали вилку по цене, мастер приехал быстро и открыл без повреждений.",
-    image: "/images/reviews/anna.svg",
+    image: "/images/reviews/client-04.png",
     name: "Анна",
     role: "Центр"
   },
   {
     text: "Вечером заклинил замок, ключ не проворачивался. Спокойно объяснили, что будут делать, и цену согласовали до начала работы.",
-    image: "/images/reviews/sergey.svg",
+    image: "/images/reviews/client-01.png",
     name: "Сергей",
     role: "ЛТЗ"
   },
   {
     text: "Потеряли ключи после поездки. Открыли дверь и сразу заменили личинку, чтобы не переживать за старые ключи.",
-    image: "/images/reviews/marina.svg",
+    image: "/images/reviews/client-06.png",
     name: "Марина",
     role: "Сокол"
   },
   {
     text: "Ключ обломился в замке. Думал, придется менять всё, но мастер достал обломок и замок еще остался рабочим.",
-    image: "/images/reviews/igor.svg",
+    image: "/images/reviews/client-03.png",
     name: "Игорь",
     role: "19-й микрорайон"
   },
   {
     text: "Ключи остались в машине. Открыли аккуратно, стекло не трогали, по времени получилось примерно как и обещали.",
-    image: "/images/reviews/pavel.svg",
+    image: "/images/reviews/client-05.png",
     name: "Павел",
     role: "НЛМК"
   },
   {
     text: "Нужно было заменить замок после арендаторов. Приехали без опоздания, предложили нормальный вариант без навязывания дорогого.",
-    image: "/images/reviews/olga.svg",
+    image: "/images/reviews/client-07.png",
     name: "Ольга",
     role: "Университетский"
   },
   {
     text: "Вызывала ночью, дверь не открывалась изнутри. Не стали пугать ценой, сначала всё объяснили, потом открыли.",
-    image: "/images/reviews/elena.svg",
+    image: "/images/reviews/client-09.png",
     name: "Елена",
     role: "Сырский"
   },
   {
     text: "Гаражный замок заклинил после морозов. Мастер приехал с инструментом, открыл и подсказал, что лучше поменять.",
-    image: "/images/reviews/nikolay.svg",
+    image: "/images/reviews/client-08.png",
     name: "Николай",
     role: "Тракторный"
   },
   {
     text: "Понравилось, что сначала попросили документы и только потом начали работу. Для такой услуги это внушает доверие.",
-    image: "/images/reviews/viktoria.svg",
-    name: "Виктория",
+    image: "/images/reviews/client-02.png",
+    name: "Дмитрий",
     role: "Опытная"
+  },
+  {
+    text: "Обращался после переезда на новую квартиру. Понравилось, что не пытались навязать самый дорогой замок, а спокойно объяснили варианты и сразу поставили новый комплект.",
+    image: "/images/reviews/client-10.png",
+    name: "Алексей",
+    role: "Елецкое шоссе"
   }
 ];
 

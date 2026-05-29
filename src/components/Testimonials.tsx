@@ -10,14 +10,16 @@ export const TestimonialsColumn = (props: {
   className?: string;
   testimonials: Testimonial[];
   duration?: number;
-  reverse?: boolean;
+  offset?: number;
 }) => {
+  const offset = props.offset ?? 0;
+
   return (
     <div className={`h-[620px] overflow-hidden ${props.className || ""}`}>
       <motion.div
-        initial={{ translateY: props.reverse ? "-50%" : "0%" }}
+        initial={{ translateY: `${offset}%` }}
         animate={{
-          translateY: props.reverse ? "0%" : "-50%"
+          translateY: `${offset - 50}%`
         }}
         transition={{
           duration: props.duration || 16,
@@ -42,7 +44,7 @@ export const TestimonialsColumn = (props: {
                       height={44}
                       src={image}
                       alt={name}
-                      className="h-11 w-11 rounded-full border border-line bg-service-alt"
+                      className="h-11 w-11 rounded-full border border-line bg-service-alt object-cover"
                     />
                     <div className="flex flex-col">
                       <div className="font-bold leading-5 tracking-tight text-graphite">{name}</div>
@@ -60,9 +62,9 @@ export const TestimonialsColumn = (props: {
 };
 
 export function TestimonialsSection() {
-  const firstColumn = testimonials.slice(0, 3);
-  const secondColumn = testimonials.slice(3, 6);
-  const thirdColumn = testimonials.slice(6, 9);
+  const firstColumn = testimonials.filter((_, index) => index % 3 === 0);
+  const secondColumn = testimonials.filter((_, index) => index % 3 === 1);
+  const thirdColumn = testimonials.filter((_, index) => index % 3 === 2);
 
   return (
     <section className="bg-white py-14 md:py-20" id="reviews">
@@ -84,10 +86,13 @@ export function TestimonialsSection() {
           <div className="relative max-h-[620px] overflow-hidden">
             <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-white to-transparent" />
             <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-white to-transparent" />
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <TestimonialsColumn testimonials={firstColumn} duration={17} />
-              <TestimonialsColumn testimonials={secondColumn} duration={21} reverse className="hidden md:block" />
-              <TestimonialsColumn testimonials={thirdColumn} duration={19} className="hidden lg:block" />
+            <div className="grid gap-6 md:hidden">
+              <TestimonialsColumn testimonials={testimonials} duration={32} offset={0} />
+            </div>
+            <div className="hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
+              <TestimonialsColumn testimonials={firstColumn} duration={24} offset={0} />
+              <TestimonialsColumn testimonials={secondColumn} duration={31} offset={-16} />
+              <TestimonialsColumn testimonials={thirdColumn} duration={27} offset={-29} className="hidden lg:block" />
             </div>
           </div>
         </div>
