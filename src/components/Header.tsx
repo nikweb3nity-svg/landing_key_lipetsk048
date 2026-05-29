@@ -1,11 +1,12 @@
 import { company, navItems } from "@/data/site";
 import { ButtonLink } from "./ButtonLink";
 import { Icon } from "./Icon";
+import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-white/92 backdrop-blur-xl">
-      <div className="section-shell flex h-18 items-center justify-between gap-4">
+      <div className="section-shell flex h-[72px] items-center justify-between gap-4">
         <a className="focus-ring flex items-center gap-3 rounded-2xl" href="#top" aria-label="На главную">
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-service-blue text-white">
             <Icon name="key" className="h-5 w-5" />
@@ -42,13 +43,16 @@ export function Header() {
           </ButtonLink>
         </div>
 
-        <a
-          aria-label="Позвонить мастеру"
-          className="focus-ring grid h-11 w-11 place-items-center rounded-xl bg-service-blue text-white md:hidden"
-          href={company.primaryPhone.href}
-        >
-          <Icon name="phone" className="h-5 w-5" />
-        </a>
+        <div className="flex items-center gap-2 lg:hidden">
+          <a
+            aria-label="Позвонить мастеру"
+            className="focus-ring grid h-11 w-11 place-items-center rounded-xl bg-service-blue text-white md:hidden"
+            href={company.primaryPhone.href}
+          >
+            <Icon name="phone" className="h-5 w-5" />
+          </a>
+          <MobileMenu />
+        </div>
       </div>
     </header>
   );

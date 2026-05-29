@@ -15,7 +15,7 @@ export const company = {
 };
 
 export const navItems = [
-  { label: "Ситуации", href: "#cases" },
+  { label: "Услуги", href: "#cases" },
   { label: "Цены", href: "#prices" },
   { label: "Порядок", href: "#process" },
   { label: "FAQ", href: "#faq" }

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { MobileCtaBar } from "@/components/MobileCtaBar";
+import { CookieConsent } from "@/components/CookieConsent";
 import { company } from "@/data/site";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zolotoy-klyuchik-lipetsk.ru";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         {children}
         <Footer />
+        <CookieConsent />
         <MobileCtaBar />
       </body>
     </html>

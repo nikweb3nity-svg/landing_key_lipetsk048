@@ -17,8 +17,8 @@ export default function HomePage() {
         <div className="section-shell">
           <div className="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <SectionHeader
-              eyebrow="Выберите ситуацию"
-              title="Что нужно открыть?"
+              eyebrow="Услуги"
+              title="Какие замки открываем"
               text="Коротко опишите проблему — мастер сразу скажет ориентир по цене и времени приезда."
             />
             <ButtonLink href="#cost" icon="calculator" variant="secondary" className="rounded-xl">
