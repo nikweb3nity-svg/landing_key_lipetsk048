@@ -43,7 +43,7 @@ export default function HomePage() {
                   <div className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-xl bg-white/92 text-service-blueText shadow-sm backdrop-blur">
                     <Icon className="h-5 w-5" name={caseIcons[index]} />
                   </div>
-                  <span className="absolute bottom-4 right-4 rounded-full bg-white/92 px-3 py-1 text-sm font-extrabold text-graphite shadow-sm backdrop-blur">
+                  <span className="absolute bottom-4 right-4 rounded-full bg-service-blue/92 px-3 py-1 text-sm font-extrabold text-white shadow-sm backdrop-blur">
                     {item.price}
                   </span>
                 </div>
