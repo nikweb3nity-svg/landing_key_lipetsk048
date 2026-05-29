@@ -1,8 +1,8 @@
 import { ButtonLink } from "@/components/ButtonLink";
+import { CostCalculator } from "@/components/CostCalculator";
 import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
 import { Icon, type IconName } from "@/components/Icon";
-import { LeadForm } from "@/components/LeadForm";
 import { SectionHeader } from "@/components/SectionHeader";
 import { TestimonialsSection } from "@/components/Testimonials";
 import { company, districts, helpCases, prices, steps, trustPoints } from "@/data/site";
@@ -168,12 +168,13 @@ export default function HomePage() {
       <section className="py-14 md:py-20" id="cost-section">
         <div className="section-shell grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <div className="rounded-[28px] bg-graphite p-6 text-white md:p-8">
-            <p className="text-sm font-bold uppercase tracking-[0.12em] text-blue-200">Заявка</p>
+            <p className="text-sm font-bold uppercase tracking-[0.12em] text-blue-200">Расчет без заявки</p>
             <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
-              Не можете открыть дверь? Мастер выедет сейчас
+              Узнайте ориентир и позвоните мастеру напрямую
             </h2>
             <p className="mt-4 leading-8 text-slate-300">
-              Позвоните или оставьте номер. Уточним стоимость и время приезда за 1 минуту.
+              Выберите тип проблемы и срочность. Сайт покажет примерную стоимость, а точную цену и время приезда мастер
+              уточнит по телефону за 1 минуту.
             </p>
             <div className="mt-6 rounded-2xl bg-white p-5 text-graphite">
               <p className="text-sm font-semibold text-muted">Телефон для срочного вызова</p>
@@ -182,7 +183,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <LeadForm />
+          <CostCalculator />
         </div>
       </section>
 

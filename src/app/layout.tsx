@@ -17,7 +17,11 @@ export const metadata: Metadata = {
   description:
     "Вскрытие замков в Липецке без повреждений при возможности. Мастер от 15 минут, квартиры, дома, авто, гаражи и сейфы. Цена до начала работ.",
   icons: {
-    icon: "/favicon.svg"
+    icon: [
+      { url: "/favicon.png", type: "image/png" }
+    ],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png"
   },
   openGraph: {
     type: "website",

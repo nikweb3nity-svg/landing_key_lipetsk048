@@ -1,21 +1,22 @@
 import Link from "next/link";
 import { company } from "@/data/site";
-import { Icon } from "./Icon";
 
 export function Footer() {
   return (
     <footer className="border-t border-line bg-graphite pb-28 pt-10 text-white md:pb-10">
       <div className="section-shell grid gap-8 md:grid-cols-[1.1fr_0.9fr_0.9fr] md:items-start">
         <div>
-          <div className="flex items-center gap-3">
-            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-service-blue text-white">
-              <Icon name="key" className="h-6 w-6" />
-            </span>
-            <div>
-              <p className="text-xl font-bold">{company.name}</p>
-              <p className="text-sm text-slate-300">Служба вскрытия замков</p>
-            </div>
-          </div>
+          <Link
+            className="focus-ring inline-flex max-w-[360px] rounded-[24px] bg-white p-4 shadow-[0_20px_50px_rgba(0,0,0,0.22)] transition hover:-translate-y-0.5"
+            href="/#top"
+            aria-label="На главную"
+          >
+            <img
+              alt="Золотой Ключик — аварийное вскрытие замков"
+              className="h-auto w-full"
+              src="/images/brand/zolotoy-klyuchik-logo.png"
+            />
+          </Link>
           <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">
             Информация на сайте не является публичной офертой. Работы выполняются после подтверждения
             права доступа и согласования стоимости.

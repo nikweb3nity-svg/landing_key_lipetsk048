@@ -7,13 +7,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-white/92 backdrop-blur-xl">
       <div className="section-shell flex h-[72px] items-center justify-between gap-4">
-        <a className="focus-ring flex items-center gap-3 rounded-2xl" href="#top" aria-label="На главную">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl bg-service-blue text-white">
-            <Icon name="key" className="h-5 w-5" />
+        <a className="focus-ring flex items-center gap-3 rounded-2xl" href="/#top" aria-label="На главную">
+          <span className="grid h-11 w-11 shrink-0 place-items-center overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-blue-100">
+            <img alt="" className="h-full w-full object-cover" src="/images/brand/favicon.png" />
           </span>
           <span className="leading-tight">
             <span className="block text-lg font-bold text-graphite">{company.name}</span>
-            <span className="block text-xs font-semibold text-muted">Служба вскрытия замков</span>
+            <span className="block text-xs font-semibold text-muted">аварийное вскрытие замков</span>
           </span>
         </a>
 
