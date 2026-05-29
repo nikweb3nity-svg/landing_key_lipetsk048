@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import { Icon, type IconName } from "@/components/Icon";
 import { LeadForm } from "@/components/LeadForm";
 import { SectionHeader } from "@/components/SectionHeader";
+import { TestimonialsSection } from "@/components/Testimonials";
 import { company, districts, helpCases, prices, steps, trustPoints } from "@/data/site";
 
 const caseIcons: IconName[] = ["home", "key", "wrench", "lock", "car", "shield"];
@@ -161,6 +162,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection />
 
       <section className="py-14 md:py-20" id="cost-section">
         <div className="section-shell grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
